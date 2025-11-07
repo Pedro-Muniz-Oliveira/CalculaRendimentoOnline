@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: calculadora-java
+    env: docker
+    buildCommand: ./build.sh
+    startCommand: java -cp backend/backend_classes:backend/lib/json.jar backend.CalculadoraServer
+    envVars:
+      - key: PORT
+        value: 8080
