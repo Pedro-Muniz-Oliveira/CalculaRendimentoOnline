@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora de Moedas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>💰 Calculadora de Moedas 1.0</h1>
+
+    <section id="calc">
+      <label>Valor investido (R$):</label>
+      <input id="investido" type="text" placeholder="ex: 4000" />
+
+      <label>Preço do ativo na compra:</label>
+      <input id="compra" type="text" placeholder="ex: 0.067" />
+
+      <label>Preço atual do ativo:</label>
+      <input id="atual" type="text" placeholder="ex: 0.075" />
+
+      <button onclick="calcular()">Calcular</button>
+    </section>
+
+    <div id="resultado"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

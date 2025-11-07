@@ -1,0 +1,7 @@
+[2025-11-07 15:17:20] ❌ Falha ao iniciar o servidor: Address already in use: bind
+[2025-11-07 15:17:30] ❌ Falha ao iniciar o servidor: Address already in use: bind
+[2025-11-07 15:18:28] 🚀 Servidor iniciado em http://localhost:8080/calcular
+[2025-11-07 15:18:36] ➡️ Nova requisição recebida: POST /calcular
+[2025-11-07 15:18:36] 📩 Corpo recebido: {"investido":100,"compra":10,"atual":20}
+[2025-11-07 15:18:36] 📊 Dados → Investido: 100,00 | Compra: 10,00 | Atual: 20,00
+[2025-11-07 15:18:36] ✅ Resposta enviada: {"valorAtual":200,"quantidade":10,"lucro":100}

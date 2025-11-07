@@ -1,0 +1,13 @@
+[2025-11-07 15:23:10] 🚀 Servidor iniciado em http://localhost:8080/calcular
+[2025-11-07 15:23:20] ➡️ Nova requisição recebida: POST /calcular
+[2025-11-07 15:23:20] 📩 Corpo recebido: {"investido":100,"compra":10,"atual":20}
+[2025-11-07 15:23:20] 📊 Dados → Investido: 100,00 | Compra: 10,00 | Atual: 20,00
+[2025-11-07 15:23:20] ✅ Resposta enviada: {"valorAtual":200,"quantidade":10,"lucro":100}
+[2025-11-07 15:23:38] ➡️ Nova requisição recebida: POST /calcular
+[2025-11-07 15:23:38] 📩 Corpo recebido: {"investido":100,"compra":10,"atual":20}
+[2025-11-07 15:23:38] 📊 Dados → Investido: 100,00 | Compra: 10,00 | Atual: 20,00
+[2025-11-07 15:23:38] ✅ Resposta enviada: {"valorAtual":200,"quantidade":10,"lucro":100}
+[2025-11-07 15:24:01] ➡️ Nova requisição recebida: POST /calcular
+[2025-11-07 15:24:01] 📩 Corpo recebido: {"investido":1000,"compra":10,"atual":12}
+[2025-11-07 15:24:01] 📊 Dados → Investido: 1000,00 | Compra: 10,00 | Atual: 12,00
+[2025-11-07 15:24:01] ✅ Resposta enviada: {"valorAtual":1200,"quantidade":100,"lucro":200}
