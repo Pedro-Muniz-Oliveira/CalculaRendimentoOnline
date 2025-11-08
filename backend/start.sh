@@ -1,16 +1,15 @@
 #!/usr/bin/env bash
 set -e
 
-echo "==> Iniciando servidor Java no Render..."
+echo "🚀 Iniciando servidor Java..."
 
-# Caminho de compilação
 mkdir -p backend/build_classes
 
-# Compila se ainda não estiver compilado
+# Compila se ainda não existir
 if [ ! -f backend/build_classes/CalculadoraServer.class ]; then
-  echo "==> Compilando CalculadoraServer..."
+  echo "🔧 Compilando o código..."
   javac -cp backend/lib/json.jar -d backend/build_classes backend/src/CalculadoraServer.java
 fi
 
-# Executa o servidor
+# Executa
 java -cp backend/build_classes:backend/lib/json.jar backend.CalculadoraServer
