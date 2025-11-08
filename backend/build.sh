@@ -1,4 +1,13 @@
 #!/usr/bin/env bash
-# build.sh
-javac -cp backend/lib/json.jar -d backend/backend_classes backend/src/CalculadoraServer.java
-java -cp backend/backend_classes:backend/lib/json.jar backend.CalculadoraServer
+set -e  # interrompe se ocorrer erro
+
+echo "==> Compilando o servidor Java..."
+
+# Cria pasta para classes compiladas
+mkdir -p backend/build_classes
+
+# Compila o servidor
+javac -cp backend/lib/json.jar -d backend/build_classes backend/src/CalculadoraServer.java
+
+echo "==> Iniciando servidor..."
+java -cp backend/build_classes:backend/lib/json.jar CalculadoraServer

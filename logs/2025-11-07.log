@@ -11,3 +11,6 @@
 [2025-11-07 15:24:01] 📩 Corpo recebido: {"investido":1000,"compra":10,"atual":12}
 [2025-11-07 15:24:01] 📊 Dados → Investido: 1000,00 | Compra: 10,00 | Atual: 12,00
 [2025-11-07 15:24:01] ✅ Resposta enviada: {"valorAtual":1200,"quantidade":100,"lucro":200}
+[2025-11-07 17:27:32] 🚀 Servidor iniciado em http://localhost:8080/calcular
+[2025-11-07 17:27:45] 🚀 Servidor iniciado em http://localhost:8080/calcular
+[2025-11-07 17:29:38] 🚀 Servidor iniciado em http://localhost:8080/calcular
