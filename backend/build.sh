@@ -1,13 +1,8 @@
 #!/usr/bin/env bash
-set -e  # interrompe se ocorrer erro
+set -e
 
-echo "==> Compilando o servidor Java..."
+echo "⚙️ Instalando JDK..."
+apt-get update -y
+apt-get install -y openjdk-17-jdk
 
-# Cria pasta para classes compiladas
-mkdir -p backend/build_classes
-
-# Compila o servidor
-javac -cp backend/lib/json.jar -d backend/build_classes backend/src/CalculadoraServer.java
-
-echo "==> Iniciando servidor..."
-java -cp backend/build_classes:backend/lib/json.jar CalculadoraServer
+echo "✅ JDK instalado."
