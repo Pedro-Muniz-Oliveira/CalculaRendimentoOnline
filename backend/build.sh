@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-echo "⚙️ Instalando JDK..."
+echo "☕ Instalando JDK..."
 apt-get update -y
 apt-get install -y openjdk-17-jdk
 
