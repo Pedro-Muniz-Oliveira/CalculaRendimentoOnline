@@ -1,9 +1,9 @@
 services:
   - type: web
-    name: calculadora-java
+    name: calcula-rendimento-online
     env: docker
-    buildCommand: ./build.sh
-    startCommand: java -cp backend/backend_classes:backend/lib/json.jar backend.CalculadoraServer
+    buildCommand: bash backend/build.sh
+    startCommand: bash backend/start.sh
     envVars:
       - key: PORT
         value: 8080
