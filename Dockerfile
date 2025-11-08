@@ -4,15 +4,14 @@ FROM openjdk:17-jdk-slim
 # Define o diretório de trabalho
 WORKDIR /app
 
-# Copia o conteúdo do projeto para o container
+# Copia tudo para dentro do container
 COPY . .
 
-# Compila o backend (ajuste se o nome da classe principal for diferente)
+# Compila o backend Java
 RUN javac -cp .:backend/json.jar backend/CalculadoraServer.java
 
 # Expõe a porta 8080
 EXPOSE 8080
 
-# Comando que roda o servidor
+# Roda o servidor Java
 CMD ["java", "-cp", ".:backend/json.jar", "backend.CalculadoraServer"]
-
