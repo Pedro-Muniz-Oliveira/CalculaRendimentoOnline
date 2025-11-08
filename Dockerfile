@@ -1,23 +1,18 @@
-# Usa imagem oficial com Java 17 + Node.js
+# Usa imagem base com Java 17 já instalado
 FROM openjdk:17-jdk-slim
 
-# Instala Node.js e Yarn (para o frontend)
-RUN apt-get update && apt-get install -y curl && \
-    curl -fsSL https://deb.nodesource.com/setup_22.x | bash - && \
-    apt-get install -y nodejs yarn && \
-    apt-get clean
-
-# Define diretório de trabalho
+# Define o diretório de trabalho
 WORKDIR /app
 
-# Copia tudo para dentro do container
+# Copia o conteúdo do projeto para o container
 COPY . .
 
-# Compila o backend
+# Compila o backend (ajuste se o nome da classe principal for diferente)
 RUN javac -cp .:backend/json.jar backend/CalculadoraServer.java
 
-# Expõe a porta que o servidor Java usa
+# Expõe a porta 8080
 EXPOSE 8080
 
-# Comando para iniciar o servidor
+# Comando que roda o servidor
 CMD ["java", "-cp", ".:backend/json.jar", "backend.CalculadoraServer"]
+
